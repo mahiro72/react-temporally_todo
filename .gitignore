@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/temporally_todo/node_modules
+/temporally_todo/.pnp
+/temporally_todo.pnp.js
+
+# testing
+/temporally_todo/coverage
+
+# production
+/temporally_todo/build
+
+# misc
+/temporally_todo.DS_Store
+/temporally_todo.env.local
+/temporally_todo.env.development.local
+/temporally_todo.env.test.local
+/temporally_todo.env.production.local
+
+/temporally_todonpm-debug.log*
+/temporally_todoyarn-debug.log*
+/temporally_todoyarn-error.log*
