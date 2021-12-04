@@ -14,6 +14,7 @@ const NewTodoForm = () => {
             type:"ADD_TODO",
             title:title
         })
+        setTitle('');
     }
 
     return (
@@ -21,7 +22,7 @@ const NewTodoForm = () => {
         <form className="container border-bottom">
             <div className="my-3">
                 <label className="form-label" >New Todo</label>
-                <input type="text" className="form-control mb-3" onChange={(e)=>setTitle(e.target.value)} />
+                <input value={title} type="text" className="form-control mb-3" onChange={(e)=>setTitle(e.target.value)} />
                 <button 
                     type="submit" 
                     className="btn btn-secondary" 
