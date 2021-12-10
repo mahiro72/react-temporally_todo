@@ -4,7 +4,7 @@ const reducer = (state,action)=>{
     switch(action.type){
         case 'ADD_TODO':
             const newTodo={
-                id:state.length===0?1:state.length+1,
+                id:state.length===0?1:state[0].id+1,
                 title:action.title
             }
             return [newTodo,...state]

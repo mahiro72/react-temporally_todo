@@ -21,7 +21,6 @@ function App() {
   const [state, dispatch] = useReducer(reducer,initialState);
 
   useEffect(() => {
-    console.log('call effect')
     localStorage.setItem(MyStrage,JSON.stringify(state));
   }, [state])
 
